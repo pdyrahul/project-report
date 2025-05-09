@@ -1,0 +1,88 @@
+
+@import './variables';
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background: $card-bg;
+  border: 1px solid $border-color;
+  padding: 1rem;
+  border-radius: $border-radius;
+  max-width: 500px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid $primary-color;
+  }
+}
+
+.logo {
+  width: 100px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+.figure{display: flex; flex-direction: column; gap: 1.25rem; margin-right:1rem;}
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-size: 1rem;
+  color: $text-color;
+  margin-bottom: 0.5rem;
+}
+
+.title .subtitle {
+  font-size: 0.8rem;
+  color: $subtext-color;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.journal {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.impactFactor {
+  background: $highlight-bg;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  color: $text-color;
+  text-align: center;
+}
+
+.pdfLink {
+  display: inline-flex;
+  gap: 0.5rem;
+  color: $primary-color;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  transition: color 0.2s;
+  align-items: center;
+  &:hover {
+    text-decoration: underline;
+    color: darken($primary-color, 10%);
+  }
+}
+
+.viewDetails {
+  padding: 0.5rem 1rem;
+  background: $primary-color;
+  color: white;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  
+  &:hover {
+    background: darken($primary-color, 10%);
+    transform: scale(1.05);
+  }
+}

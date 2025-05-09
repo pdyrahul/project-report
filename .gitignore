@@ -1,0 +1,49 @@
+# Node.js dependencies
+/node_modules
+
+# Vite, Next.js, and build outputs
+/.next
+/out
+/build
+/.vercel
+
+# Local environment files
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs and Debug Files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Misc
+.DS_Store
+*.pem
+*.log
+
+# IDE and Editor Settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# Mac OS Finder
+.DS_Store
+
+# Windows Thumbnail Cache
+Thumbs.db
+
+# GitHub Secret Files
+*.key
+*.crt
+

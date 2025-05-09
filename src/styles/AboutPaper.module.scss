@@ -1,0 +1,88 @@
+@import '../styles/variables';
+
+.paperContainer {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: $card-bg;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  @media (max-width: 640px) {
+    padding: 1rem;
+  }
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: $text-color;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  @media (max-width: 640px) {
+    font-size: 1.25rem;
+  }
+}
+.sectionTitle {
+  border-bottom:2px solid grey;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem;
+  color: $text-color;
+  @media (max-width: 640px) {
+    font-size: 1.125rem;
+  }
+}
+.detail {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  @media (max-width: 640px) {
+    font-size: 1rem;
+  }
+}
+.link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  background: $primary-color;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
+.icon {
+  margin-right: 0.5rem;
+}
+.loading {
+  color: #6b7280;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #054cda;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 8px;
+  }
+}
+.error {
+  color: #ef4444;
+  text-align: center;
+  margin: 1rem 0;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

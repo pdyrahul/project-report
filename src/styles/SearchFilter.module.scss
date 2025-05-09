@@ -1,0 +1,50 @@
+@import '../styles/variables';
+
+.searchContainer {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.select, .input {
+  padding: 0.5rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  font-size: 1rem;
+  background-color: $card-bg;
+  color: $text-color;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+
+  }
+  &::placeholder{
+    font-size: 0.8rem;
+  }
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background: $primary-color;
+  color: white;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.input, .select {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 0.8rem;
+}
+.clearButton{border:none; background: transparent; color: $primary-color; cursor: pointer;}

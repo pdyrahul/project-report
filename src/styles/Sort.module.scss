@@ -1,0 +1,42 @@
+@import '../styles/variables';
+.sortContainer{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  font-size: 1rem;
+  width: 180px;
+  background-color: #f9f9f9;
+  color: $text-color;
+  transition: border-color 0.3s, background-color 0.3s;
+  font-size: 0.8rem;
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+}
+
+.button {
+  padding: 0.5rem 1.25rem;
+  background: $primary-color;
+  color: white;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    background: darken($primary-color, 10%);
+    box-shadow: 0 8px 30px rgba(0, 123, 255, 0.2);
+  }
+
+  &:active {
+    background: darken($primary-color, 15%);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.15);
+  }
+}
+.clearButton{border:none; background: transparent; color: $primary-color; cursor: pointer;}

@@ -1,0 +1,17 @@
+@import './variables';
+
+.main { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+.title { font-size: 2rem; margin-bottom: 1.5rem; color: $text-color; text-align: center; }
+.cardGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+.error { color: red; }
+.filltertab{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: $card-bg;
+  border: 1px solid #e0e0e0;
+  border-radius: $border-radius;
+}
