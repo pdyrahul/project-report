@@ -59,7 +59,7 @@ export default function Home() {
           ? Array(9)
               .fill()
               .map((_, i) => <Skeleton key={i} height={200} width={300} />)
-          : currentPapers?.map((paper) => <Card key={paper.id} paper={paper} />)}
+          : currentPapers?.map((paper) => <Card key={paper.id} paper={paper} circleBgColor={"red"}/>)}
       </div>
       <Pagination
         currentPage={currentPage}
