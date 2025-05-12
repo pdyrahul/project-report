@@ -3,7 +3,7 @@ import { FileText } from "lucide-react";
 import styles from "../styles/Card.module.scss";
 import paperpic from "../../public/placeholder.jpg";
 import Link from "next/link";
-const Card = ({ paper }) => {
+const Card = ({ paper, circleBgColor }) => {
   const {
     displaytitle,
     papertitle,
@@ -23,7 +23,7 @@ const Card = ({ paper }) => {
   ? `${baseURL}${paper.journal.journalimage.url}`
   : paperpic;
   return (
-    <div className={styles.card}>
+    <div className={styles.card} style={{ "--circle-bg": circleBgColor }}>
       <div className={styles.figure}>
         <Image
           src={journalImage}
